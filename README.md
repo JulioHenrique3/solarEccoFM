@@ -1,6 +1,31 @@
 # SolarEcchoFM
 
-SolarEcchoFM é um bot de música para Discord desenvolvido em Python. A base do projeto foi criada por [@DuneGG](https://www.youtube.com/@DuneDiscord) e pode ser conferida neste [vídeo do YouTube](https://www.youtube.com/watch?v=YGx0xNHzjgE&t=393s). Este repositório contém a versão com correções de execução e adaptações.
+SolarEcchoFM é um bot de música para Discord desenvolvido em Python. A base do projeto foi criada por [@DuneGG](https://www.youtube.com/@DuneDiscord) e pode ser conferida na série de tutoriais linkada abaixo. Este repositório contém a versão com correções de execução e adaptações.
+
+---
+
+> [!IMPORTANT]
+> **📺 Pré-requisito de Aprendizado — Tutoriais do DUNEGG**
+>
+> Antes de configurar, modificar ou contribuir com este projeto, **é obrigatório seguir a série de tutoriais do canal [@DuneDiscord](https://www.youtube.com/@DuneDiscord) no YouTube.** Os vídeos cobrem toda a base conceitual necessária — criação do bot no Developer Portal, estrutura de Cogs, comandos slash e transmissão de áudio — sem os quais partes do código podem ser mal interpretadas ou configuradas incorretamente.
+>
+> Siga os vídeos abaixo na ordem indicada:
+>
+> * 🎬 **Aula 1 — Criando um Bot no Discord:** [Assistir no YouTube](https://www.youtube.com/watch?v=TS4wt3LfDlo&list=PL9-YiBpH1Ne7NJlG9wGsEee24koLc8JTT)
+> * 🎬 **Aula 7 — Criando um Bot de Música (Base do Projeto):** [Assistir no YouTube](https://www.youtube.com/watch?v=f8AyaXH_8A4&list=PL9-YiBpH1Ne7NJlG9wGsEee24koLc8JTT&index=7)
+> * 📺 **Canal completo:** [@DuneDiscord no YouTube](https://www.youtube.com/@DuneDiscord)
+
+> [!CAUTION]
+> **🚫 AVISO CRÍTICO — NÃO HOSPEDE ESTE BOT EM SERVIÇOS DE NUVEM DO DISCORD**
+>
+> Este projeto foi desenvolvido para rodar **100% localmente na máquina do usuário**. Hospedar este bot em serviços de nuvem que se integram diretamente à plataforma do Discord (como bots que rodam em servidores terceiros de forma automatizada, ou serviços que violam os [Termos de Serviço do Discord](https://discord.com/terms)) **representa risco real de ban permanente do bot e/ou da conta do usuário responsável.**
+>
+> ✅ **Modo correto de uso:** Execute o bot localmente com `python main.py` no seu próprio computador.
+> ❌ **Não faça:** Subir o token do bot para plataformas de hospedagem não homologadas pelo Discord.
+>
+> *Futuramente, uma nova arquitetura vinculada a um servidor próprio será avaliada para operação contínua (24h/dia), seguindo todas as diretrizes oficiais da plataforma.*
+
+---
 
 ## Índice
 
@@ -25,7 +50,6 @@ SolarEcchoFM é um bot de música para Discord desenvolvido em Python. A base do
 ```text
 solarEcchoFM/
 ├── cogs/                 # Diretório contendo os módulos (cogs) do bot
-│   ├── dice.py           # Comando simples de rolar dados (d6)
 │   ├── MUSIC.md          # Documentação detalhada da lógica de music.py
 │   └── music.py          # Lógica de reprodução de áudio e comandos de música
 ├── venv/                 # Diretório do Ambiente Virtual (isolamento de pacotes)
